@@ -1,0 +1,142 @@
+.sponsors-header {
+  margin-bottom: 28px;
+}
+
+.sponsors-eyebrow,
+.sponsors-creator > span {
+  color: #c4b5fd;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.sponsors-header h1 {
+  margin: 8px 0;
+  font-size: clamp(32px, 4vw, 46px);
+  font-family: var(--display);
+  letter-spacing: -0.04em;
+}
+
+.sponsors-header p,
+.sponsor-info p,
+.sponsors-creator p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.sponsors-select,
+.sponsor-email-panel input,
+.sponsor-email-panel textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  color: var(--text);
+  background: var(--bg-input);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.sponsors-select {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.sponsors-creator,
+.sponsor-row,
+.sponsor-email-panel {
+  padding: 22px;
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+.sponsors-creator {
+  margin-bottom: 28px;
+}
+
+.sponsors-creator h2 {
+  margin: 8px 0;
+  font-family: var(--display);
+}
+
+.sponsors-list > h2 {
+  margin-bottom: 16px;
+  font-family: var(--display);
+}
+
+.sponsor-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.sponsor-info {
+  min-width: 0;
+}
+
+.sponsor-info h3 {
+  margin: 0 0 8px;
+}
+
+.sponsor-info p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.sponsor-mail-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.sponsor-email-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.sponsor-email-panel textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.sponsor-results-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.sponsor-results-heading h2 {
+  margin: 0;
+  font-family: var(--display);
+}
+
+.sponsor-info a {
+  color: #c4b5fd;
+  text-decoration: none;
+}
+
+.sponsor-info a:hover {
+  text-decoration: underline;
+}
+
+.sponsor-error {
+  color: #ff9292;
+  margin: 12px 0;
+}
+
+@media (max-width: 600px) {
+  .sponsor-row,
+  .sponsor-results-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .sponsor-mail-btn {
+    flex-shrink: 0;
+  }
+}

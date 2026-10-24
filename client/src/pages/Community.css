@@ -1,0 +1,259 @@
+.community-header,
+.community-section-heading,
+.inspiration-card-heading,
+.inspiration-channel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.community-header {
+  margin-bottom: 30px;
+}
+
+.community-header h1 {
+  margin: 8px 0;
+  font-size: clamp(32px, 4vw, 46px);
+  font-family: var(--display);
+  letter-spacing: -0.04em;
+}
+
+.community-header p,
+.community-section-heading p,
+.community-empty p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.community-eyebrow {
+  color: #c4b5fd;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.community-header select,
+.community-add-form input {
+  box-sizing: border-box;
+  padding: 12px;
+  color: var(--text);
+  background: var(--bg-input);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  min-width: 0;
+}
+
+.community-section {
+  margin-bottom: 34px;
+}
+
+.community-section-heading {
+  margin-bottom: 16px;
+}
+
+.community-section-heading h2 {
+  margin: 0 0 6px;
+  font-family: var(--display);
+}
+
+.community-section-heading p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.community-count {
+  color: #c8b6ff;
+  background: var(--accent-soft);
+  border-radius: 20px;
+  padding: 7px 12px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.community-add-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.community-add-form input {
+  flex: 1;
+}
+
+.community-page button {
+  font: inherit;
+}
+
+.community-page button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.community-empty {
+  padding: 32px 24px;
+  text-align: center;
+  background: var(--bg-panel);
+  border: 1px dashed var(--line);
+  border-radius: 16px;
+}
+
+.community-empty h3 {
+  margin-top: 0;
+  font-family: var(--display);
+}
+
+.inspiration-list {
+  display: grid;
+  gap: 16px;
+}
+
+.inspiration-card {
+  min-width: 0;
+  padding: 18px;
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+.inspiration-card-heading {
+  margin-bottom: 14px;
+}
+
+.inspiration-channel {
+  justify-content: flex-start;
+  min-width: 0;
+}
+
+.inspiration-channel img,
+.inspiration-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.inspiration-avatar {
+  display: grid;
+  place-items: center;
+  background: #302346;
+  color: #d7caff;
+}
+
+.inspiration-channel h3 {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.community-remove,
+.community-text-button {
+  padding: 8px 12px;
+  color: #cbbcff;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.community-video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.community-video {
+  display: block;
+  min-width: 0;
+  padding: 0;
+  overflow: hidden;
+  background: var(--bg-input);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  cursor: pointer;
+  aspect-ratio: 16 / 9;
+}
+
+.community-video img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.community-video:hover img {
+  transform: scale(1.04);
+}
+
+.community-notice,
+.community-error {
+  margin-bottom: 20px;
+  padding: 14px;
+  border-radius: 12px;
+  background: var(--bg-panel);
+  color: #d7caff;
+  border: 1px solid var(--line);
+}
+
+.community-error {
+  color: #ffaaaa;
+  border-color: #603535;
+}
+
+.community-player-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.84);
+}
+
+.community-player {
+  position: relative;
+  width: min(900px, 100%);
+  background: #111019;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.community-player-close {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 10px;
+  color: white;
+  background: transparent;
+  border: 0;
+  font-size: 30px !important;
+  cursor: pointer;
+}
+
+.community-player-frame {
+  aspect-ratio: 16 / 9;
+}
+
+.community-player-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 650px) {
+  .community-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .community-add-form {
+    flex-direction: column;
+  }
+
+  .community-video-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

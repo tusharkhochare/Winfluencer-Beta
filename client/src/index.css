@@ -1,0 +1,70 @@
+:root {
+  --bg: #07070d;
+  --bg-elevated: #101018;
+  --bg-panel: rgba(18, 17, 28, 0.78);
+  --bg-soft: #16151f;
+  --bg-input: #0d0c14;
+  --line: rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(168, 139, 250, 0.32);
+  --text: #f5f3ff;
+  --text-muted: #9b96ad;
+  --text-dim: #6f6a80;
+  --accent: #8b5cf6;
+  --accent-2: #22d3ee;
+  --accent-soft: rgba(139, 92, 246, 0.16);
+  --danger: #fb7185;
+  --success: #4ade80;
+  --warning: #fbbf24;
+  --shadow: 0 24px 60px rgba(0, 0, 0, 0.38);
+  --radius: 18px;
+  --radius-sm: 12px;
+  --sans: "Manrope", "Segoe UI", sans-serif;
+  --display: "Syne", "Manrope", sans-serif;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--text);
+  letter-spacing: 0.01em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  max-width: none;
+  text-align: left;
+  border: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+a {
+  color: #c4b5fd;
+}
+
+img {
+  max-width: 100%;
+}
+
+::selection {
+  background: rgba(139, 92, 246, 0.35);
+}
